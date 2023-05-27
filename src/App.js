@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Component1 from "./Components/Component1";
+import Component2 from "./Components/Component2";
+import Component3 from "./Components/Component3";
+import Component4 from "./Components/Component4";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css";
+
+const items = [
+  { n: 4, s: 90 },
+  { n: 32, s: 2 },
+  { n: 4, s: 30 },
+  { n: 70, s: 7 },
+];
+
+const user = {
+  name: "John",
+  surname: "Smith",
+};
+
+export default class App extends Component {
+  render() {
+    return (
+      <>
+        <div className="layout">
+          <Component1
+            title="Component 1 - Ex 1"
+            items={items}
+            user={user}
+            sortBy="s"
+          />
+        </div>
+        <div className="layout">
+          <Component2 />
+        </div>
+        <div className="layout">
+          <Component3 />
+        </div>
+        <div className="layout">
+          <Component4 />
+        </div>
+      </>
+    );
+  }
 }
-
-export default App;
