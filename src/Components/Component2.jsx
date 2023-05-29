@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 export default class Component2 extends Component {
-  componentDidMount() {
-    ReactDOM.findDOMNode(this.refs.name).focus();
-  }
+  // componentDidMount() {
+  //   ReactDOM.findDOMNode(this.refs.name).focus();
+  // }
 
   handleSubmit = (e) => {
     e.preventDefault();
