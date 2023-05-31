@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import Component1 from "./Components/Component1";
-import Component2 from "./Components/Component2";
-import Component3 from "./Components/Component3";
-import Component4 from "./Components/Component4";
-import Component5 from "./Components/Component5";
-import Component6 from "./Components/Component6";
+// import Component1 from "./Components/Component1";
+// import Component2 from "./Components/Component2";
+// import Component3 from "./Components/Component3";
+// import Component4 from "./Components/Component4";
+// import Component5 from "./Components/Component5";
+// import Component6 from "./Components/Component6";
+import Component7 from "./Components/Component7";
+import Component8 from "./Components/Component8";
 
 import "./App.css";
 
@@ -40,12 +42,19 @@ export default class App extends Component {
         </div>
         <div className="layout">
           <Component4 />
-        </div> */}
-        <div className="layout">
+        </div>
+         <div className="layout">
           <Component5 />
         </div>
         <div className="layout">
           <Component6 />
+        </div>
+         <div className="layout">
+          <Component7 />
+        </div> */}
+
+        <div className="layout">
+          <Component8 />
         </div>
       </>
     );
